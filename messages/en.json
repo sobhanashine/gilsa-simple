@@ -1,0 +1,12 @@
+{
+  "nav": {"home": "Home", "products": "Products", "about": "About", "contact": "Contact"},
+  "hero": {"badge": "Smart Home Solutions", "title": "Modern Touch Switches for the Smart Home", "subtitle": "Premium-grade smart touch switches engineered for reliability, elegance, and seamless smart home integration.", "cta_call": "Call Us Now", "cta_products": "View Products"},
+  "contact_cta": {"title": "Ready to upgrade your space?", "subtitle": "Our team is available to answer your questions and help you choose the right switches for your project.", "availability": "Available Saturday-Thursday, 9am-6pm", "call_now": "Call Now", "whatsapp": "WhatsApp", "office": "Office Line", "mobile1": "Mobile 1", "mobile2": "Mobile 2", "or": "or"},
+  "sticky_call": {"label": "Call Us", "whatsapp": "WhatsApp"},
+  "why": {"title": "Why Gilsa?", "r1_title": "4+ Years of Manufacturing", "r1_desc": "Trusted by contractors and homeowners across Iran.", "r2_title": "Modern Design", "r2_desc": "Sleek touch surfaces that complement any interior.", "r3_title": "Smart Integration", "r3_desc": "Compatible with leading smart home systems.", "r4_title": "After-sales Support", "r4_desc": "Dedicated team ready to assist you."},
+  "stats": {"followers": "41K+ Instagram Followers", "experience": "4+ Years Experience", "products": "Wide Product Range", "support": "Full After-sales Support"},
+  "products": {"title": "Our Products", "subtitle": "Explore our full range of smart touch switches", "featured": "Featured Products", "view_details": "View Details", "all_categories": "All", "contact_for_price": "Contact for pricing", "empty": "Products will appear here soon.", "specs": "Specifications"},
+  "contact": {"title": "Get in Touch", "subtitle": "We'd love to hear from you", "name": "Full Name", "email": "Email Address", "phone": "Phone Number", "message": "Your Message", "send": "Send Message", "success": "Message sent! We'll be in touch shortly.", "phones_title": "Call or WhatsApp", "address_title": "Our Office", "error": "Please provide your name, message, and either phone or email."},
+  "about": {"title": "About Gilsa", "body": "Gilsa is a leading Iranian manufacturer of modern smart touch switches. With over 4 years of experience, we design and produce premium switches that combine elegant aesthetics with smart home technology. Our products are trusted by contractors, architects, and homeowners across Iran."},
+  "footer": {"tagline": "Modern smart switches for every space.", "rights": "All rights reserved."}
+}

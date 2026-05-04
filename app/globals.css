@@ -1,26 +1,91 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0a0a0b;
+  --foreground: #f8f5ef;
+  --gold: #c9922a;
+  --gold-soft: #f3ca70;
+  --brass-dark: #5d3c0d;
+  --graphite: #151519;
+  --steel: #8f949e;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-gold: var(--gold);
+  --color-graphite: var(--graphite);
+  --font-sans: var(--font-latin);
+  --font-arabic: var(--font-arabic);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
+  background: var(--background);
 }
 
 body {
-  background: var(--background);
+  min-height: 100vh;
+  overflow-x: hidden;
+  background:
+    radial-gradient(circle at 14% 4%, rgba(201, 146, 42, .28), transparent 28%),
+    radial-gradient(circle at 86% 12%, rgba(243, 202, 112, .11), transparent 25%),
+    linear-gradient(180deg, #0a0a0b 0%, #111115 46%, #080809 100%);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+body:before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: .13;
+  background-image:
+    linear-gradient(rgba(255,255,255,.16) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.16) 1px, transparent 1px),
+    radial-gradient(circle, rgba(201,146,42,.5) 1px, transparent 1.2px);
+  background-position: 0 0, 0 0, 18px 18px;
+  background-size: 56px 56px, 56px 56px, 56px 56px;
+  mask-image: linear-gradient(to bottom, black, transparent 78%);
+}
+
+::selection {
+  background: var(--gold);
+  color: #111;
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse-soft {
+  0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(201,146,42,.5); }
+  50% { transform: scale(1.035); box-shadow: 0 0 0 12px rgba(201,146,42,0); }
+}
+
+@keyframes switch-glow {
+  0%, 100% { opacity: .54; transform: translateY(0); }
+  50% { opacity: 1; transform: translateY(-2px); }
+}
+
+@keyframes slow-pan {
+  from { transform: translate3d(-1.5%, -1%, 0) scale(1.02); }
+  to { transform: translate3d(1.5%, 1%, 0) scale(1.04); }
+}
+
+.animate-fade-up { animation: fade-up .8s ease both; }
+.animate-pulse-slow { animation: pulse-soft 2.2s ease-in-out infinite; }
+.animate-slow-pan { animation: slow-pan 9s ease-in-out infinite alternate; }
+.switch-glow { animation: switch-glow 2.8s ease-in-out infinite; }
+.gold-card {
+  background: linear-gradient(135deg, rgba(201,146,42,.18), rgba(255,255,255,.045));
+  border: 1px solid rgba(201,146,42,.28);
+}
+.luxury-panel {
+  background:
+    linear-gradient(135deg, rgba(255,255,255,.11), rgba(255,255,255,.035)),
+    linear-gradient(180deg, rgba(201,146,42,.08), transparent 42%);
+  border: 1px solid rgba(255,255,255,.12);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.09), 0 30px 90px rgba(0,0,0,.36);
 }
