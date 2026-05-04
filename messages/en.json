@@ -1,12 +1,121 @@
 {
-  "nav": {"home": "Home", "products": "Products", "about": "About", "contact": "Contact"},
-  "hero": {"badge": "Smart Home Solutions", "title": "Modern Touch Switches for the Smart Home", "subtitle": "Premium-grade smart touch switches engineered for reliability, elegance, and seamless smart home integration.", "cta_call": "Call Us Now", "cta_products": "View Products"},
-  "contact_cta": {"title": "Ready to upgrade your space?", "subtitle": "Our team is available to answer your questions and help you choose the right switches for your project.", "availability": "Available Saturday-Thursday, 9am-6pm", "call_now": "Call Now", "whatsapp": "WhatsApp", "office": "Office Line", "mobile1": "Mobile 1", "mobile2": "Mobile 2", "or": "or"},
-  "sticky_call": {"label": "Call Us", "whatsapp": "WhatsApp"},
-  "why": {"title": "Why Gilsa?", "r1_title": "4+ Years of Manufacturing", "r1_desc": "Trusted by contractors and homeowners across Iran.", "r2_title": "Modern Design", "r2_desc": "Sleek touch surfaces that complement any interior.", "r3_title": "Smart Integration", "r3_desc": "Compatible with leading smart home systems.", "r4_title": "After-sales Support", "r4_desc": "Dedicated team ready to assist you."},
-  "stats": {"followers": "41K+ Instagram Followers", "experience": "4+ Years Experience", "products": "Wide Product Range", "support": "Full After-sales Support"},
-  "products": {"title": "Our Products", "subtitle": "Explore our full range of smart touch switches", "featured": "Featured Products", "view_details": "View Details", "all_categories": "All", "contact_for_price": "Contact for pricing", "empty": "Products will appear here soon.", "specs": "Specifications"},
-  "contact": {"title": "Get in Touch", "subtitle": "We'd love to hear from you", "name": "Full Name", "email": "Email Address", "phone": "Phone Number", "message": "Your Message", "send": "Send Message", "success": "Message sent! We'll be in touch shortly.", "phones_title": "Call or WhatsApp", "address_title": "Our Office", "error": "Please provide your name, message, and either phone or email."},
-  "about": {"title": "About Gilsa", "body": "Gilsa is a leading Iranian manufacturer of modern smart touch switches. With over 4 years of experience, we design and produce premium switches that combine elegant aesthetics with smart home technology. Our products are trusted by contractors, architects, and homeowners across Iran."},
-  "footer": {"tagline": "Modern smart switches for every space.", "rights": "All rights reserved."}
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "Smart Home Manufacturer",
+    "title": "Gilsa Smart Home, Engineered End-to-End",
+    "subtitle": "A full-cycle smart home product manufacturer with 60% of Iran’s smart home market, 12,000+ model combinations, and regional project experience.",
+    "cta_call": "Call Us Now",
+    "cta_products": "View Products"
+  },
+  "contact_cta": {
+    "title": "Ready to upgrade your space?",
+    "subtitle": "Our team is available to answer your questions and help you choose the right switches for your project.",
+    "availability": "Available Saturday-Thursday, 9am-6pm",
+    "call_now": "Call Now",
+    "whatsapp": "WhatsApp",
+    "office": "Office Line",
+    "mobile1": "Mobile 1",
+    "mobile2": "Mobile 2",
+    "or": "or"
+  },
+  "sticky_call": {
+    "label": "Call Us",
+    "whatsapp": "WhatsApp"
+  },
+  "why": {
+    "title": "Why Gilsa?",
+    "r1_title": "End-to-end manufacturing",
+    "r1_desc": "A complete design, production, and quality-control chain for smart home products.",
+    "r2_title": "Broad design variety",
+    "r2_desc": "Multiple frames, 5 colors, and coordinated switches, sockets, and mechanisms.",
+    "r3_title": "Complete smart portfolio",
+    "r3_desc": "Lighting, thermostats, security, touch panels, audio, smart locks, and specialty devices.",
+    "r4_title": "Warranty-backed support",
+    "r4_desc": "3-year unconditional replacement plus 10 years of after-sales service."
+  },
+  "stats": {
+    "followers": "60% share of Iran smart home market",
+    "experience": "3-year unconditional replacement warranty",
+    "products": "12,000+ touch switch and socket combinations",
+    "support": "10 years of after-sales service"
+  },
+  "products": {
+    "title": "Our Products",
+    "subtitle": "Explore our full range of smart touch switches",
+    "featured": "Featured Products",
+    "view_details": "View Details",
+    "all_categories": "All",
+    "contact_for_price": "Contact for pricing",
+    "empty": "Products will appear here soon.",
+    "specs": "Specifications"
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "We'd love to hear from you",
+    "name": "Full Name",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "message": "Your Message",
+    "send": "Send Message",
+    "success": "Message sent! We'll be in touch shortly.",
+    "phones_title": "Call or WhatsApp",
+    "address_title": "Our Office",
+    "error": "Please provide your name, message, and either phone or email."
+  },
+  "about": {
+    "title": "About Gilsa",
+    "body": "Gilsa is a full-cycle smart home product manufacturer in Iran with 60% market share, offering a complete portfolio of touch switches, sockets, mechanisms, and integrated smart devices. Gilsa products are backed by a 3-year unconditional replacement warranty and 10 years of after-sales service."
+  },
+  "footer": {
+    "tagline": "Complete smart home solutions, from touch switches to integrated building devices.",
+    "rights": "All rights reserved."
+  },
+  "snapshot": {
+    "eyebrow": "Gilsa Smart Home",
+    "title": "Brand and product highlights",
+    "body": "Gilsa manufactures smart home products end-to-end, holds 60% of Iran’s smart home market, and participates in international gatherings and projects across Persian Gulf countries.",
+    "proof": {
+      "producer": "Full-cycle manufacturer of smart home products",
+      "international": "Active in international forums and Persian Gulf projects",
+      "palette": "Touch switches and matching sockets in 5 colors and varied frames"
+    },
+    "metrics": {
+      "market": {
+        "value": "60%",
+        "title": "Iran market share",
+        "desc": "A strong position in Iran’s smart home market."
+      },
+      "warranty": {
+        "value": "3 years",
+        "title": "Unconditional replacement",
+        "desc": "Faulty products are replaced during the warranty period without extra questions."
+      },
+      "support": {
+        "value": "10 years",
+        "title": "After-sales service",
+        "desc": "Long-term support for Gilsa customers and projects."
+      },
+      "models": {
+        "value": "12K+",
+        "title": "Product combinations",
+        "desc": "Touch switches, socket sets, mechanisms, colors, and frame options."
+      }
+    },
+    "portfolio_eyebrow": "Product Portfolio",
+    "portfolio_title": "From touch switches to complete smart building solutions",
+    "portfolio_desc": "A wide range for lighting, safety, comfort, access, audio, and specialty needs in residential and commercial projects.",
+    "products": {
+      "switches": "1- to 16-gang lighting switches, one-way, two-way, and intermediate switching",
+      "safety": "Intrusion and fire alarm systems, video monitoring, and intercom",
+      "panels": "Touch panels, heating/cooling thermostats, dimmers, and curtain switches",
+      "access": "Smart locks and keyless entry systems",
+      "audio": "Audio systems including amplifiers and speakers",
+      "special": "Doorbell, melody, smart restroom, evaporative cooler, window-cleaning robot, and smart mirror"
+    }
+  }
 }
