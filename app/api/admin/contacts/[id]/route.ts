@@ -1,0 +1,3 @@
+import {NextResponse} from 'next/server';
+import {createAdminSupabase, requireUser} from '@/lib/supabase/server';
+export async function PUT(request: Request, {params}: {params: Promise<{id: string}>}) { const {user} = await requireUser(); if (!user) return NextResponse.json({error: 'Unauthorized'}, {status: 401}); const {id} = await params; const body = await request.json().catch(() => ({})); const {data, error} = await createAdminSupabase().from('contacts').update({read: Boolean(body.read)}).eq('id', id).select().single(); return error ? NextResponse.json({error: error.message}, {status: 400}) : NextResponse.json({contact: data}); }
