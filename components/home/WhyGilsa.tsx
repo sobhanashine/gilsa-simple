@@ -12,7 +12,7 @@ export default async function WhyGilsa() {
       <div className="mx-auto max-w-7xl">
         <div className="mb-10 max-w-2xl">
           <p className="mb-3 font-bold uppercase tracking-[.24em] text-[#25AAB3]">Engineering + Support</p>
-          <h2 className="text-4xl font-black tracking-[-.045em] md:text-6xl">{t('title')}</h2>
+          <h2 className="text-3xl font-black leading-tight tracking-[-.04em] sm:text-4xl md:text-6xl">{t('title')}</h2>
         </div>
         <div className="grid gap-5 md:grid-cols-4">
           {rows.map((n, i) => {
