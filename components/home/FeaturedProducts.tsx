@@ -9,12 +9,12 @@ export default async function FeaturedProducts({locale}: {locale: Locale}) {
 
   return (
     <section className="relative px-5 py-24">
-      <div className="absolute inset-x-0 top-20 -z-10 h-64 bg-[radial-gradient(circle_at_50%_50%,rgba(201,146,42,.12),transparent_55%)]" />
+      <div className="absolute inset-x-0 top-20 -z-10 h-64 bg-[radial-gradient(circle_at_50%_50%,rgba(37,170,179,.12),transparent_55%)]" />
       <div className="mx-auto max-w-7xl">
         <div className="mb-10 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
           <div>
-            <p className="font-bold uppercase tracking-[.24em] text-[#C9922A]">Gilsa Touch</p>
-            <h2 className="mt-2 text-4xl font-black tracking-[-.045em] md:text-6xl">{t('featured')}</h2>
+            <p className="font-bold uppercase tracking-[.24em] text-[#25AAB3]">Gilsa Touch</p>
+            <h2 className="mt-2 text-3xl font-black leading-tight tracking-[-.04em] sm:text-4xl md:text-6xl">{t('featured')}</h2>
           </div>
           <p className="max-w-md text-white/55">{t('subtitle')}</p>
         </div>

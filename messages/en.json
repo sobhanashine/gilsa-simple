@@ -117,5 +117,26 @@
       "audio": "Audio systems including amplifiers and speakers",
       "special": "Doorbell, melody, smart restroom, evaporative cooler, window-cleaning robot, and smart mirror"
     }
+  },
+  "services": {
+    "eyebrow": "Pre- and post-purchase services",
+    "title": "Complete support from design to project handover",
+    "body": "Gilsa offers a wide service scope for a complete, worry-free experience in two key phases: before product purchase and project commencement, and after purchase and implementation.",
+    "before_title": "Services before purchasing",
+    "after_title": "Post-purchase services",
+    "image_alt_services": "Gilsa pre- and post-purchase services brochure",
+    "image_alt_profile": "Gilsa company profile and engineering capabilities brochure",
+    "before": {
+      "design": "Comprehensive design proposals for the project",
+      "sampling": "System sampling and pre-implementation review",
+      "technical": "Technical data for materials and specialized consultation",
+      "budget": "Preliminary project calculations, equipment lists, and budget estimates"
+    },
+    "after": {
+      "installation": "Construction, installation, and commissioning of electronics",
+      "quality": "Quality control of product manufacturing and production",
+      "drawings": "As-built drawings and project documentation",
+      "afterSales": "Comprehensive after-sales support"
+    }
   }
 }

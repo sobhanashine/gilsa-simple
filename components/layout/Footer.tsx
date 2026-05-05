@@ -9,21 +9,38 @@ export default async function Footer({locale}: {locale: Locale}) {
     <footer className="border-t border-white/10 bg-black px-5 py-12">
       <div className="mx-auto grid max-w-7xl gap-8 md:grid-cols-[1.4fr_1fr_1fr]">
         <div>
-          <h2 dir="ltr" className="text-2xl font-black font-sans inline-block">Gilsa <span className="text-[#C9922A]">Touch</span></h2>
-          <p className="mt-3 max-w-sm text-white/60">{t('footer.tagline')}</p>
+          <h2 dir="ltr" className="inline-block text-2xl font-black font-sans">Gilsa <span className="text-[#25AAB3]">Touch</span></h2>
+          <p className="mt-3 max-w-sm text-sm leading-7 text-white/60 sm:text-base">{t('footer.tagline')}</p>
         </div>
-        <div className="flex flex-col gap-2 text-white/70">
-          <Link href="/products" locale={locale}>{t('nav.products')}</Link>
-          <Link href="/about" locale={locale}>{t('nav.about')}</Link>
-          <Link href="/contact" locale={locale}>{t('nav.contact')}</Link>
+        <div className="flex flex-col gap-3 text-sm text-white/70 sm:text-base">
+          <Link href="/products" locale={locale} className="leading-6 transition hover:text-white">{t('nav.products')}</Link>
+          <Link href="/about" locale={locale} className="leading-6 transition hover:text-white">{t('nav.about')}</Link>
+          <Link href="/contact" locale={locale} className="leading-6 transition hover:text-white">{t('nav.contact')}</Link>
         </div>
-        <div className="space-y-3 text-white/70">
-          <a dir="ltr" className="inline-flex items-center gap-2 font-sans" href={phones[0].href}><Phone size={16}/>{phones[0].display}</a><br/>
-          <a dir="ltr" className="inline-flex items-center gap-2 font-sans" href={instagramHref} target="_blank" rel="noreferrer"><Camera size={16}/>@gilsatouch</a>
+        <div className="flex flex-col gap-3 text-sm text-white/70 sm:text-base">
+          <a
+            dir="ltr"
+            className="inline-flex w-fit items-center gap-2 break-all font-sans leading-6 transition hover:text-white"
+            href={phones[0].href}
+          >
+            <Phone size={16} className="shrink-0" />
+            <span>{phones[0].display}</span>
+          </a>
+          <a
+            dir="ltr"
+            className="inline-flex w-fit items-center gap-2 break-all font-sans leading-6 transition hover:text-white"
+            href={instagramHref}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Camera size={16} className="shrink-0" />
+            <span>@gilsatouch</span>
+          </a>
         </div>
       </div>
-      <div className="mx-auto mt-10 max-w-7xl text-xs text-white/40 flex items-center gap-1">
-        <span dir="ltr" className="font-sans">© {new Date().getFullYear()} Gilsa.</span> <span>{t('footer.rights')}</span>
+      <div className="mx-auto mt-10 flex max-w-7xl flex-wrap items-center gap-x-1 gap-y-2 text-xs leading-6 text-white/40 sm:text-sm">
+        <span dir="ltr" className="font-sans">© {new Date().getFullYear()} Gilsa.</span>
+        <span>{t('footer.rights')}</span>
       </div>
     </footer>
   );
