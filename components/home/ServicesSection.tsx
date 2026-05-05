@@ -16,9 +16,9 @@ export default async function ServicesSection() {
         <div className="mb-10 grid gap-6 lg:grid-cols-[.86fr_1.14fr] lg:items-end">
           <div>
             <p className="mb-3 font-bold uppercase tracking-[.24em] text-[#25aab3]">{t('eyebrow')}</p>
-            <h2 className="text-4xl font-black tracking-[-.045em] md:text-6xl">{t('title')}</h2>
+            <h2 className="text-3xl font-black leading-tight tracking-[-.04em] sm:text-4xl md:text-6xl">{t('title')}</h2>
           </div>
-          <p className="max-w-3xl text-lg leading-9 text-white/62">{t('body')}</p>
+          <p className="max-w-3xl text-base leading-8 text-white/62 sm:text-lg sm:leading-9">{t('body')}</p>
         </div>
 
         <div className="grid gap-6 lg:grid-cols-2">
@@ -34,7 +34,7 @@ export default async function ServicesSection() {
               <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/10 to-transparent rtl:bg-gradient-to-l" />
             </div>
             <div className="p-6 md:p-8">
-              <h3 className="text-2xl font-black">{t('before_title')}</h3>
+              <h3 className="text-xl font-black sm:text-2xl">{t('before_title')}</h3>
               <div className="mt-5 grid gap-3 sm:grid-cols-2">
                 {serviceKeys.map((key, index) => {
                   const Icon = serviceIcons[index];
@@ -61,7 +61,7 @@ export default async function ServicesSection() {
               <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/10 to-transparent rtl:bg-gradient-to-l" />
             </div>
             <div className="p-6 md:p-8">
-              <h3 className="text-2xl font-black">{t('after_title')}</h3>
+              <h3 className="text-xl font-black sm:text-2xl">{t('after_title')}</h3>
               <div className="mt-5 grid gap-3 sm:grid-cols-2">
                 {supportKeys.map((key) => (
                   <div key={key} className="rounded-2xl border border-white/10 bg-white/[.045] px-4 py-3 font-bold leading-7 text-white/74">
