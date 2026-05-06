@@ -14,6 +14,7 @@ export default async function Footer({locale}: {locale: Locale}) {
         </div>
         <div className="flex flex-col gap-3 text-sm text-white/70 sm:text-base">
           <Link href="/products" locale={locale} className="leading-6 transition hover:text-white">{t('nav.products')}</Link>
+          <Link href="/blogs" locale={locale} className="leading-6 transition hover:text-white">{t('nav.blogs')}</Link>
           <Link href="/about" locale={locale} className="leading-6 transition hover:text-white">{t('nav.about')}</Link>
           <Link href="/contact" locale={locale} className="leading-6 transition hover:text-white">{t('nav.contact')}</Link>
         </div>

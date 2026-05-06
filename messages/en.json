@@ -2,8 +2,15 @@
   "nav": {
     "home": "Home",
     "products": "Products",
+    "blogs": "Blog",
     "about": "About",
     "contact": "Contact"
+  },
+  "blogs": {
+    "title": "Blog",
+    "subtitle": "Insights, guides, and updates from Gilsa",
+    "read_more": "Read more",
+    "back_to_blogs": "Back to all posts"
   },
   "hero": {
     "badge": "Smart Home Manufacturer",
