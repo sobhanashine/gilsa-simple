@@ -16,6 +16,7 @@ export default async function Header({locale}: {locale: Locale}) {
         <nav className="hidden items-center gap-7 text-sm font-medium text-white/75 md:flex">
           <Link href="/" locale={locale} className="transition hover:text-[#25AAB3]">{t('home')}</Link>
           <Link href="/products" locale={locale} className="transition hover:text-[#25AAB3]">{t('products')}</Link>
+          <Link href="/blogs" locale={locale} className="transition hover:text-[#25AAB3]">{t('blogs')}</Link>
           <Link href="/about" locale={locale} className="transition hover:text-[#25AAB3]">{t('about')}</Link>
           <Link href="/contact" locale={locale} className="transition hover:text-[#25AAB3]">{t('contact')}</Link>
         </nav>
