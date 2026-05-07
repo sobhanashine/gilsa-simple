@@ -51,9 +51,7 @@ export default async function BlogsPage({params}: {params: Promise<{locale: Loca
                    {title}
                  </h2>
 
-                 <p className="mt-2 line-clamp-3 text-xs leading-relaxed text-white/60 sm:mt-3 sm:text-sm sm:leading-7 md:text-base">
-                   {excerpt}
-                 </p>
+                  <div className="mt-2 line-clamp-3 text-xs leading-relaxed text-white/60 sm:mt-3 sm:text-sm sm:leading-7 md:text-base" dangerouslySetInnerHTML={{ __html: excerpt }} />
 
                  <div className="mt-4 text-xs font-bold text-[#25AAB3] transition-colors group-hover:text-[#7FE3EA] sm:mt-5 sm:text-sm">
                    {t('read_more')} →
