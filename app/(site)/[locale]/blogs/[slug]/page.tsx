@@ -1,25 +1,25 @@
-import {notFound} from 'next/navigation';
-import {getTranslations} from 'next-intl/server';
-import {getBlogBySlug, getBlogs} from '@/lib/blogs';
+import { notFound } from 'next/navigation';
+import { getTranslations } from 'next-intl/server';
+import { getPostBySlug, getAllPostsSlugs } from '@/lib/wp';
 import type {Locale} from '@/i18n/routing';
 import {Link} from '@/i18n/routing';
 import {Calendar, ChevronRight, Home} from 'lucide-react';
 
 export async function generateStaticParams() {
-  const blogs = getBlogs();
-  return blogs.map((blog) => ({slug: blog.slug}));
+  const slugs = await getAllPostsSlugs();
+  return slugs.map((slug) => ({ slug }));
 }
 
 export default async function BlogDetailPage({params}: {params: Promise<{locale: Locale; slug: string}>}) {
   const {locale, slug} = await params;
   const t = await getTranslations('blogs');
-  const blog = getBlogBySlug(slug);
+  const post = await getPostBySlug(slug);
 
-  if (!blog) notFound();
+  if (!post) notFound();
 
-  const title = locale === 'fa' ? blog.title_fa : locale === 'ar' ? blog.title_ar : blog.title_en;
-  const content = locale === 'fa' ? blog.content_fa : locale === 'ar' ? blog.content_ar : blog.content_en;
-  const date = new Date(blog.published_at).toLocaleDateString(
+  const title = post.title;
+  const content = post.content;
+  const date = new Date(post.date).toLocaleDateString(
     locale === 'fa' ? 'fa-IR' : locale === 'ar' ? 'ar-SA' : 'en-US',
     {year: 'numeric', month: 'long', day: 'numeric'}
   );
@@ -46,7 +46,7 @@ export default async function BlogDetailPage({params}: {params: Promise<{locale:
           <header className="mb-8 sm:mb-12">
             <div className="mb-4 flex items-center gap-2 text-xs text-white/50 sm:mb-5 sm:text-sm">
               <Calendar size={14} />
-              <time dateTime={blog.published_at}>{date}</time>
+              <time dateTime={post.date}>{date}</time>
             </div>
 
             <h1 className="text-3xl font-black leading-[1.2] tracking-[-.04em] text-white sm:text-4xl md:text-5xl lg:text-6xl">
