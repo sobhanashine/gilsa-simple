@@ -1,4 +1,4 @@
-const WP_GRAPHQL_URL = process.env.NEXT_PUBLIC_WP_GRAPHQL_URL || process.env.WP_GRAPHQL_URL || '';
+const WP_GRAPHQL_URL = process.env.NEXT_PUBLIC_WP_GRAPHQL_URL ?? process.env.WP_GRAPHQL_URL ?? '';
 
 export interface WPPost {
   id: string;
