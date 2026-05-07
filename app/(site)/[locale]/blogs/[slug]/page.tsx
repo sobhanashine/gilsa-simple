@@ -60,13 +60,7 @@ export default async function BlogDetailPage({params}: {params: Promise<{locale:
             </div>
           )}
 
-          <div className="prose prose-invert max-w-none prose-p:text-base prose-p:leading-relaxed sm:prose-p:text-lg sm:prose-p:leading-8 md:prose-lg md:prose-p:text-xl md:prose-p:leading-9">
-            {content.split('\n\n').map((paragraph, idx) => (
-              <p key={idx} className="mb-5 text-white/75 sm:mb-6">
-                {paragraph}
-              </p>
-            ))}
-          </div>
+           <div className="prose prose-invert max-w-none prose-p:text-base prose-p:leading-relaxed sm:prose-p:text-lg sm:prose-p:leading-8 md:prose-lg md:prose-p:text-xl md:prose-p:leading-9" dangerouslySetInnerHTML={{ __html: content }} />
 
           <div className="mt-12 border-t border-white/10 pt-8 sm:mt-16 sm:pt-10">
             <Link
