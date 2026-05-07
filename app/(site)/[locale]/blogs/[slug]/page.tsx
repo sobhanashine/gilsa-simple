@@ -54,9 +54,9 @@ export default async function BlogDetailPage({params}: {params: Promise<{locale:
             </h1>
           </header>
 
-          {blog.image && (
+          {post.featuredImage?.node?.sourceUrl && (
             <div className="mb-8 aspect-video w-full overflow-hidden rounded-2xl bg-white/5 shadow-[0_16px_48px_rgba(0,0,0,.45)] sm:mb-12 sm:rounded-3xl sm:shadow-[0_24px_80px_rgba(0,0,0,.45)]">
-              <img src={blog.image} alt={title} className="h-full w-full object-cover" />
+              <img src={post.featuredImage.node.sourceUrl} alt={title} className="h-full w-full object-cover" />
             </div>
           )}
 
